@@ -5,6 +5,7 @@
   - [Dev-C++](#dev-c)
   - [Visual Studio](#visual-studio)
 - [Mac OS](#mac-os)
+  - [XCode](#x-code)
 - [Others](#others)
 
 ### Windows
@@ -102,6 +103,8 @@ Step-by-step tutorial on [YouTube](https://youtu.be/HPHd92nj0Io).
 
 ### Mac OS
 
+#### XCode
+
 Step-by-step tutorial on [YouTube](https://youtu.be/7nJNDRCq5o0).
 
 Open `Terminal` and type:
@@ -109,6 +112,8 @@ Open `Terminal` and type:
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+You might need to enter your password and press yes a several times.
 
 After finish installing, type:
 
