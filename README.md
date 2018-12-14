@@ -75,6 +75,16 @@ Follow the steps [here](docs/README.md).
 
   A way to check if you had put them in the correct path is to see if the include path really exists in the file system.
 
+- Cannot find resource files (when running task_2_ans.c)
+
+  You should drag your files (pirulen.ttf, 32largebugs.jpg) into your project folder (same folder as your `main.c` or `task_n_ans.c`).
+
+- Redefinition of ...
+
+  You need to keep only one `main` function in one project, for example you may have both `task_1_ans.c` and `task_2_ans.c` in your project. You should only keep one.
+
+  Or you might accidentally edit the Allgero5 library header, re-installing the library may help.
+
 ### Mac OS
 
 - Command not found - brew
@@ -91,4 +101,14 @@ Follow the steps [here](docs/README.md).
 
   You should drag your files (`pirulen.ttf`, `32largebugs.jpg`) into your project.
 
-  ![](docs/imgs/mac-files.png)
+  ![](docs/imgs/faq-mac-def.png)
+  ![](docs/imgs/faq-mac-files.png)
+  ![](docs/imgs/faq-mac-drag.png)
+  ![](docs/imgs/faq-mac-copy.png)
+  ![](docs/imgs/faq-mac-fin.png)
+
+- Redefinition of ...
+
+  You need to keep only one `main` function in one project, for example you may have both `task_1_ans.c` and `task_2_ans.c` in your project. You should only keep one.
+
+  Or you might accidentally edit the Allgero5 library header, re-installing the library may help.
