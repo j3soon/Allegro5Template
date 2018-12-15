@@ -67,6 +67,25 @@ Follow the steps [here](docs/README.md).
 
   Copy it to your project folder under `bin\Debug`.
 
+- `task_2_ans.c` compile error in Code::Blocks.
+
+  ```
+  error: could not convert 'al_init_font_addon()' from 'void' to 'bool'
+  ```
+
+  Change
+
+  ```c
+  if (!al_init_font_addon())
+      game_abort(...);
+  ```
+
+  to
+
+  ```c
+  al_init_font_addon();
+  ```
+
 - Header not found using the new version Allegro5.2 in Dev-C++
 
   `fatal error: allegro5/allegro.h: No such file or directory`
