@@ -59,6 +59,12 @@ Follow the steps [here](docs/README.md).
 
 ## FAQ
 
+### Hackathon
+
+- `Space` key cannot be detected.
+
+  You should change your input from `Chinese` to `English`, otherwise the keycode will be different.
+
 ### Windows
 
 - File `allegro-5.0.10-monolith-mt-debug.dll` is missing in Code::Blocks
@@ -103,6 +109,12 @@ Follow the steps [here](docs/README.md).
   You need to keep only one `main` function in one project, for example you may have both `task_1_ans.c` and `task_2_ans.c` in your project. You should only keep one.
 
   Or you might accidentally edit the Allgero5 library header, re-installing the library may help.
+
+- When reopen the project, all settings are gone.
+
+  For Code::Blocks you should open the `*.cbp` file.
+
+  For Dev-C++ you should open the `*.dev` file. If all files disappear, use `Project > Add To Project...` and select all files.
 
 ### Mac OS
 
