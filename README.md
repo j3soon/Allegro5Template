@@ -61,6 +61,36 @@ Follow the steps [here](docs/README.md).
 
 ### Hackathon
 
+- Task 1, 2, 3 are independent, you can test the game behavior after finishing each part.
+
+- If your game lags (drop frames), you can comment out the line below:
+
+  ```c
+  #define LOG_ENABLED
+  ```
+
+- If your game loading time is very long, it is caused by the large music files. You can change the file to other audio, or simply disable (don't load) background music.
+
+- [HACKATHON 2-7] Cannot work or don't know what's going on, or if you want to add some update code below this part of code.
+
+  Change it to the code below:
+
+  ```c
+  //double now = ???();
+  //if (???[???] && ??? - ??? >= MAX_COOLDOWN) {
+  //    for (i = 0; ???) {
+  //        if (???)
+  //            break;
+  //    }
+  //    if (i < MAX_BULLET) {
+  //        ??? = now;
+  //        bullets[i].hidden = ???;
+  //        bullets[i].x = ???;
+  //        bullets[i].y = ???;
+  //    }
+  //}
+  ```
+
 - `Space` key cannot be detected.
 
   You should change your input from `Chinese` to `English`, otherwise the keycode will be different.
@@ -71,7 +101,7 @@ Follow the steps [here](docs/README.md).
 
   Find the file `allegro/bin/allegro-5.0.10-monolith-mt-debug.dll` located inside the unzipped library folder.
 
-  Copy it to your project folder under `bin\Debug`.
+  Copy it to your project folder under `bin\Debug`. If these folders don't exist, you can create them by yourself, or simply compile and run the code, your IDE will create them for you.
 
 - `task_2_ans.c` compile error in Code::Blocks.
 
