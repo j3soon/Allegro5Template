@@ -71,6 +71,28 @@ Follow the steps [here](docs/README.md).
 
 - If your game loading time is very long, it is caused by the large music files. You can change the file to other audio, or simply disable (don't load) background music.
 
+- If your game crashed when entering Start Scene.
+
+- When firing the bullet, your bullet won't be launched in the center of your plane. It has some offset to the right.
+
+  In [HACKATHON 2-5-2]: use `al_get_bitmap_width`, `al_get_bitmap_height` when setting bullet's size.
+
+  ```c
+  // TODO: Initialize bullets.
+  // For each bullets in array, set their w and h to the size of
+  // the image, and set their img to bullet image, hidden to true,
+  // (vx, vy) to (0, -3).
+  // Uncomment and fill in the code below.
+  //for (???) {
+  //  bullets[i].w = al_get_bitmap_width(???);
+  //  bullets[i].h = al_get_bitmap_height(???);
+  //  bullets[i].img = img_bullet;
+  //  bullets[i].vx = 0;
+  //  bullets[i].vy = -3;
+  //  bullets[i].hidden = true;
+  //}
+  ```
+
 - [HACKATHON 2-7] Cannot work or don't know what's going on, or if you want to add some update code below this part of code.
 
   Change it to the code below:
