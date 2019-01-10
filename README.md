@@ -59,7 +59,13 @@ Follow the steps [here](docs/README.md).
 
 ## FAQ
 
-### Hackathon
+### Final Project
+
+- `al_load_bitmap`, `load_resized_bitmap` keeps failing, but I've done nothing wrong.
+
+  Some image files you downloaded from the internet might be in the incorrect format. You can open it in PhotoShop, GIMP, Paint.NET, ... and re-save it as `*.png` or any format you want. This problem occurs sometime if you are using Chrome, but it doesn't occur if you use Firefox.
+
+  For example: You can try to save this image: [http://img1.3png.com/340af8a9dd2e666738f797b6573a963e1e8f.png](http://img1.3png.com/340af8a9dd2e666738f797b6573a963e1e8f.png). Although it says it's a `PNG` file, but it's actually a `JPEG` file. If you don't believe it, you can open it in Notepad, Notepad++, ... You'll see the `JFIF` at the beginning lines, if it's a `PNG` file, you should see ` NG`.
 
 - Task 1, 2, 3 are independent, you can test the game behavior after finishing each part.
 
@@ -71,7 +77,7 @@ Follow the steps [here](docs/README.md).
 
 - If your game loading time is very long, it is caused by the large music files. You can change the file to other audio, or simply disable (don't load) background music.
 
-- If your game crashed when entering Start Scene.
+- If your game crashed when entering Start Scene, you might missed the [HACKATHON 2-5-2] task.
 
 - When firing the bullet, your bullet won't be launched in the center of your plane. It has some offset to the right.
 
@@ -117,7 +123,7 @@ Follow the steps [here](docs/README.md).
 
   You should change your input from `Chinese` to `English`, otherwise the keycode will be different.
 
-### Windows
+### Installation on Windows
 
 - File `allegro-5.0.10-monolith-mt-debug.dll` is missing in Code::Blocks
 
@@ -168,7 +174,7 @@ Follow the steps [here](docs/README.md).
 
   For Dev-C++ you should open the `*.dev` file. If all files disappear, use `Project > Add To Project...` and select all files.
 
-### Mac OS
+### Installation on Mac OS
 
 - Command not found - brew
 
@@ -194,4 +200,9 @@ Follow the steps [here](docs/README.md).
 
   You need to keep only one `main` function in one project, for example you may have both `task_1_ans.c` and `task_2_ans.c` in your project. You should only keep one.
 
-  Or you might accidentally edit the Allgero5 library header, re-installing the library may help.
+  Or you might accidentally edit the Allgero5 library header (e.g. `fmaths.inl`), re-installing the library using the command below may help.
+
+  ```shell
+  brew uninstall allegro
+  brew install allegro
+  ```
