@@ -61,6 +61,16 @@ Follow the steps [here](docs/README.md).
 
 ### Final Project
 
+- Error message: `assertion failed ... bitmap_draw...`
+
+  A high chance is that you didn't initialize one of your image file before drawing it. e.g.
+  
+  ```c
+  ALLEGRO_BITMAP* img;
+  ...
+  al_draw_bitmap(img, ...);
+  ```
+
 - `al_load_bitmap`, `load_resized_bitmap` keeps failing, but I've done nothing wrong.
 
   Some image files you downloaded from the internet might be in the incorrect format. You can open it in PhotoShop, GIMP, Paint.NET, ... and re-save it as `*.png` or any format you want. This problem occurs sometime if you are using Chrome, but it doesn't occur if you use Firefox.
