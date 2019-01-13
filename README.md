@@ -65,6 +65,13 @@ Follow the steps [here](docs/README.md).
 
   It can be used like videos after putting the library under your project folder.
 
+- If you play multiple BGMs or sound effects at the same time, the `al_play_sample` could fail.
+
+  You can either:
+  
+  1. Set `RESERVED_SAMPLES` to a higher value.
+  2. Don't abort if `al_play_sample` fails.
+
 - Unable to find resources when open the executable file located in `...\bin\` directly.
 
   You can copy all used resources to the `...\bin` folder, since the executable file searches for the resources file located in the same folder.
