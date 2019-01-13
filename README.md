@@ -61,6 +61,10 @@ Follow the steps [here](docs/README.md).
 
 ### Final Project
 
+- If you want to use GIF images, you can download the plugin [algif](http://algif.sourceforge.net/).
+
+  It can be used like videos after putting the library under your project folder.
+
 - Unable to find resources when open the executable file located in `...\bin\` directly.
 
   You can copy all used resources to the `...\bin` folder, since the executable file searches for the resources file located in the same folder.
