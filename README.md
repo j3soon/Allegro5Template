@@ -61,14 +61,28 @@ Follow the steps [here](docs/README.md).
 
 ### Final Project
 
+- Unable to find resources when open the executable file located in `...\bin\` directly.
+
+  You can copy all used resources to the `...\bin` folder, since the executable file searches for the resources file located in the same folder.
+
 - Error message: `assertion failed ... bitmap_draw...`
 
   A high chance is that you didn't initialize one of your image file before drawing it. e.g.
-  
+
   ```c
   ALLEGRO_BITMAP* img;
   ...
   al_draw_bitmap(img, ...);
+  ```
+
+  The full error message:
+  ```
+  Assertion failed!
+
+  Program: <PATH>\final.exe
+  File: <PATH>/bitmap_draw.c, Line 140
+
+  Expression: bitmap
   ```
 
 - `al_load_bitmap`, `load_resized_bitmap` keeps failing, but I've done nothing wrong.
