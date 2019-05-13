@@ -13,9 +13,9 @@ We will use Allegro 5 in the final project.
 - 12/16 (日) 09:00-20:00 黑客松 (占總成績 2%)
 - 01/14 (一) Demo, 詳情一週前會公布 (占總成績 13%)
 
-Tasks: [tasks.zip](http://lms.nthu.edu.tw/sys/read_attach.php?id=1682437)
+Tasks: [tasks](/tasks)
 
-PPT: [allegro5_tutorial.pptx](http://lms.nthu.edu.tw/sys/read_attach.php?id=1682439)
+PPT: [allegro5_tutorial.pdf](/allegro5_tutorial.pdf)
 
 ## Installation
 
