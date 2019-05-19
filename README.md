@@ -209,6 +209,10 @@ Follow the steps [here](docs/README.md).
 
   For Dev-C++ you should open the `*.dev` file. If all files disappear, use `Project > Add To Project...` and select all files.
 
+- On Code::Blocks Release mode: `The Application was Unable to Start Correctly (0xc000007b)`
+
+  You should copy both `allegro_monolith-5.2.dll` and `allegro-5.2.dll` to your `/Release` folder.
+
 ### Installation on Mac OS
 
 - Command not found - brew
