@@ -2,6 +2,8 @@
 
 We will use Allegro 5 in the final project.
 
+![](docs/imgs/preview.png)
+
 ## Administrative
 
 [iLMS Course Site](https://lms.nthu.edu.tw/course/35278)
