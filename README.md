@@ -6,7 +6,7 @@ We will use Allegro 5 in the final project.
 
 - 12/02 (二) Allegro5 簡介
 
-  希望在講解前大家可以先把 Allegro5 在自己電腦上裝好。
+  希望在黑客松前大家可以先把 Allegro5 在自己電腦上裝好。
 
 - 12/14 (六) 09:00-20:00 Prof. Yang 黑客松 (占總成績 2%)
 - 12/15 (日) 09:00-20:00 Prof. Hu 黑客松 (占總成績 2%)
