@@ -1,19 +1,16 @@
-# Allegro 5 Template for I2P(1)_2018_SR
+# Allegro 5 Template for I2P(1)_2019
 
 We will use Allegro 5 in the final project.
 
-![](docs/imgs/preview.png)
-
 ## Administrative
 
-[iLMS Course Site](https://lms.nthu.edu.tw/course/35278)
-
-- 12/13 (四) Allegro5 簡介
+- 12/02 (二) Allegro5 簡介
 
   希望在講解前大家可以先把 Allegro5 在自己電腦上裝好。
 
-- 12/16 (日) 09:00-20:00 黑客松 (占總成績 2%)
-- 01/14 (一) Demo, 詳情一週前會公布 (占總成績 13%)
+- 12/14 (六) 09:00-20:00 Prof. Yang 黑客松 (占總成績 2%)
+- 12/15 (日) 09:00-20:00 Prof. Hu 黑客松 (占總成績 2%)
+- 01/13 (一) Demo, 詳情一週前會公布 (占總成績 13%)
 
 Tasks: [tasks](/tasks), [task video](https://youtu.be/Araij6j6QME)
 
@@ -24,7 +21,7 @@ PPT: [allegro5_tutorial.pdf](/allegro5_tutorial.pdf)
 Follow the steps [here](docs/README.md).
 
 - [Windows](docs/README.md#windows)
-  - [Code::Blocks](docs/README.md#codeblocks): [Video](https://youtu.be/6qzWKRxw9eY), [Old Version](https://youtu.be/8A6DHSo3KT8?t=1)
+  - [Code::Blocks](docs/README.md#codeblocks): [Video](https://youtu.be/6qzWKRxw9eY)
   - [Dev-C++](docs/README.md#dev-c): [Video](https://youtu.be/lwscVtIUy6k)
   - [Visual Studio](docs/README.md#visual-studio): [Video](https://youtu.be/HPHd92nj0Io)
 - [Mac OS](docs/README.md#mac-os)
