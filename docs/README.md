@@ -121,7 +121,7 @@ After finish installing, type:
 brew install allegro
 ```
 
-Open `XCode`, Create a new `MacOS` project, choose `Cocoa App`.
+Open `XCode`, Create a new `MacOS` project, choose `App`.
 
 Product Name type `allegro-test`, and for Organization Identifier, you can type anything you want. For language, choose `Objective-C`, and uncheck all other checkboxes.
 
