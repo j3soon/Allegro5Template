@@ -67,7 +67,7 @@ Follow the steps [here](docs/README.md).
 - If you play multiple BGMs or sound effects at the same time, the `al_play_sample` could fail.
 
   You can either:
-  
+
   1. Set `RESERVED_SAMPLES` to a higher value.
   2. Don't abort if `al_play_sample` fails.
 
@@ -111,53 +111,21 @@ Follow the steps [here](docs/README.md).
 
 - If your game loading time is very long, it is caused by the large music files. You can change the file to other audio, or simply disable (don't load) background music.
 
-- If your game crashed when entering Start Scene, you might missed the [HACKATHON 2-5-2] task.
-
-- When firing the bullet, your bullet won't be launched in the center of your plane. It has some offset to the right.
-
-  In [HACKATHON 2-5-2]: use `al_get_bitmap_width`, `al_get_bitmap_height` when setting bullet's size.
-
-  ```c
-  // TODO: Initialize bullets.
-  // For each bullets in array, set their w and h to the size of
-  // the image, and set their img to bullet image, hidden to true,
-  // (vx, vy) to (0, -3).
-  // Uncomment and fill in the code below.
-  //for (???) {
-  //  bullets[i].w = al_get_bitmap_width(???);
-  //  bullets[i].h = al_get_bitmap_height(???);
-  //  bullets[i].img = img_bullet;
-  //  bullets[i].vx = 0;
-  //  bullets[i].vy = -3;
-  //  bullets[i].hidden = true;
-  //}
-  ```
-
-- [HACKATHON 2-7] Cannot work or don't know what's going on, or if you want to add some update code below this part of code.
-
-  Change it to the code below:
-
-  ```c
-  //double now = ???();
-  //if (???[???] && ??? - ??? >= MAX_COOLDOWN) {
-  //    for (i = 0; ???) {
-  //        if (???)
-  //            break;
-  //    }
-  //    if (i < MAX_BULLET) {
-  //        ??? = now;
-  //        bullets[i].hidden = ???;
-  //        bullets[i].x = ???;
-  //        bullets[i].y = ???;
-  //    }
-  //}
-  ```
-
 - `Space` key cannot be detected.
 
   You should change your input from `Chinese` to `English`, otherwise the keycode will be different.
 
 ### Installation on Windows
+
+- `fopen is not safe ...` in Visual Studio
+
+  Download template again, or add `#define _CRT_SECURE_NO_DEPRECATE` at the top of your file.
+
+- Visual Studio cannot compile
+
+  When setting the configuration of Allegro5 plugins, make sure to set in `All Configurations` and `All Platforms`.
+
+  ![](docs/imgs/visual-studio-all.png)
 
 - File `allegro-5.0.10-monolith-mt-debug.dll` is missing in Code::Blocks
 
@@ -211,6 +179,16 @@ Follow the steps [here](docs/README.md).
 - On Code::Blocks Release mode: `The Application was Unable to Start Correctly (0xc000007b)`
 
   You should copy both `allegro_monolith-5.2.dll` and `allegro-5.2.dll` to your `/Release` folder.
+
+- I want to hide the console window.
+
+  For Code::Blocks:
+
+  Set the build target type to `GUI application`.
+
+  ![](docs/imgs/faq-cb-gui.png)
+
+  For other IDEs there are also such settings.
 
 ### Installation on Mac OS
 
