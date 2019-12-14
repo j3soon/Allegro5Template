@@ -192,6 +192,10 @@ Follow the steps [here](docs/README.md).
 
 ### Installation on Mac OS
 
+- There are OpenGL related bugs in newer version of XCode make sure to use XCode versions prior or equal to 10.3.
+
+  Or you can use a custom Makefile.
+
 - Command not found - brew
 
   When installing homebrew, it'll ask you to press `Return` to continue, you must press `Enter` and type your password to continue installing.
