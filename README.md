@@ -12,9 +12,10 @@ We will use Allegro 5 in the final project.
 - 12/20 (Sun.) 09:00-20:00 Hackathon for Prof. Hu's Class (grading 2%)
 - 01/18 (Mon.) Final Project Demo, details will be announced one week before (grading 13%)
 
-<!--
-Exercises: [exercises](/Exercises), [exercise step-by-step video](https://youtu.be/Araij6j6QME)
--->
+Exercises:
+- [Exercises](/Exercises)
+- [Exercises step-by-step video](https://youtu.be/Araij6j6QME)
+- **(New)** [Exercises Template](https://github.com/j3soon/Allegro5Template/releases/download/v2020/Exercises.Template.zip)
 
 <!--
 PPT: [allegro5_tutorial.pdf](/allegro5_tutorial.pdf)
@@ -264,3 +265,7 @@ Follow the steps [here](docs/README.md).
   brew uninstall allegro
   brew install allegro
   ```
+
+- `dyld: Library not loaded` ...
+
+  You need to `brew install allegro` on your Mac. For the detailed steps, please refer to the XCode installation guide.
