@@ -1,20 +1,24 @@
-# Allegro 5 Template for I2P(1)_2019
+# Allegro 5 Template for I2P(1)_2020
 
 We will use Allegro 5 in the final project.
 
 ## Administrative
 
-- 12/02 (二) Allegro5 簡介
+- 12/08 (Tue.) Allegro5 Intro
 
-  希望在黑客松前大家可以先把 Allegro5 在自己電腦上裝好。
+  You should finish installing and setting up Allegro5 on your own computer and practice the exercises before Hackathon.
 
-- 12/14 (六) 09:00-20:00 Prof. Yang 黑客松 (占總成績 2%)
-- 12/15 (日) 09:00-20:00 Prof. Hu 黑客松 (占總成績 2%)
-- 01/13 (一) Demo, 詳情一週前會公布 (占總成績 13%)
+- 12/19 (Sat.) 09:00-20:00 Hackathon for Prof. Yang's Class (grading 2%)
+- 12/20 (Sun.) 09:00-20:00 Hackathon for Prof. Hu's Class (grading 2%)
+- 01/18 (Mon.) Final Project Demo, details will be announced one week before (grading 13%)
 
-Tasks: [tasks](/tasks), [task video](https://youtu.be/Araij6j6QME)
+<!--
+Exercises: [exercises](/Exercises), [exercise step-by-step video](https://youtu.be/Araij6j6QME)
+-->
 
+<!--
 PPT: [allegro5_tutorial.pdf](/allegro5_tutorial.pdf)
+-->
 
 ## Installation
 
@@ -63,6 +67,8 @@ Follow the steps [here](docs/README.md).
 - If you want to use GIF images, you can download the plugin [algif](http://algif.sourceforge.net/).
 
   It can be used like videos after putting the library under your project folder.
+
+- If you want to load MP3 audio, you can try out streaming as mentioned [here](https://github.com/liballeg/allegro_wiki/wiki/Allegro-Vivace).
 
 - If you play multiple BGMs or sound effects at the same time, the `al_play_sample` could fail.
 
@@ -119,13 +125,37 @@ Follow the steps [here](docs/README.md).
 
 - `fopen is not safe ...` in Visual Studio
 
-  Download template again, or add `#define _CRT_SECURE_NO_DEPRECATE` at the top of your file.
+  - Add `#define _CRT_SECURE_NO_DEPRECATE`/`#define _CRT_SECURE_NO_WARNINGS` at the top of your `main.c` file.
 
-- Visual Studio cannot compile
+  - Or you can set it in the Project Settings.
 
-  When setting the configuration of Allegro5 plugins, make sure to set in `All Configurations` and `All Platforms`.
+    ![](docs/imgs/crt-secure-no-warnings.png)
 
-  ![](docs/imgs/visual-studio-all.png)
+- Cannot compile on Visual Studio. (`unresolved external symbol`...)
+
+  - Remember to check `Support C++ Desktop` when installing.
+
+    ![](docs/imgs/install-cpp-support.png)
+
+  - When setting the configuration of Allegro5 plugins, make sure to set in `All Configurations` and `All Platforms`.
+
+    ![](docs/imgs/visual-studio-all.png)
+
+  - When Visual Studio complains the Windows SDK Version / Platform Toolset is not found, choose any downloaded `Windows SDK Version` and any `Platform Toolset`. (Make sure the options you chose are installed in your computer)
+
+    ![](docs/imgs/windows-sdk-version.png)
+
+    ![](docs/imgs/platform-toolset.png)
+
+- Cannot compile on Code::Blocks.
+
+  For Code::Blocks you should create a project following the tutorial above, and set the project settings to allow C++11.
+
+  ![](docs/imgs/faq-cb-cpp11.png)
+
+  The settings are almost the same in other IDEs.
+
+  For `'abs(float&)' is ambiguous` you can change `abs` to `fabs`.
 
 - File `allegro-5.0.10-monolith-mt-debug.dll` is missing in Code::Blocks
 
@@ -182,17 +212,25 @@ Follow the steps [here](docs/README.md).
 
 - I want to hide the console window.
 
-  For Code::Blocks:
-
-  Set the build target type to `GUI application`.
+  For Code::Blocks, set the build target type to `GUI application`.
 
   ![](docs/imgs/faq-cb-gui.png)
 
+  For Visual Studio, set the `Subsystem` to `Windows (/SUBSYSTEM:WINDOWS)`.
+
+  ![](docs/imgs/subsystem-windows.png)
+
   For other IDEs there are also such settings.
+
+- In Visual Studio, how to swap between the start up project in Exercises?
+
+  Right-click a project and `Set as StartUp Project` and recompile.
+
+  ![](docs/imgs/default-startup.png)
 
 ### Installation on Mac OS
 
-- There are OpenGL related bugs in newer version of XCode make sure to use XCode versions prior or equal to 10.3.
+- **(This issue should not occur now)** There are OpenGL related bugs in newer version of XCode make sure to use XCode versions prior or equal to 10.3.
 
   Or you can use a custom Makefile.
 

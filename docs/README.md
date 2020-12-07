@@ -121,7 +121,7 @@ After finish installing, type:
 brew install allegro
 ```
 
-Open `XCode`, Create a new `MacOS` project, choose `Cocoa App`.
+Open `XCode`, Create a new `MacOS` project, choose `App`.
 
 Product Name type `allegro-test`, and for Organization Identifier, you can type anything you want. For language, choose `Objective-C`, and uncheck all other checkboxes.
 
@@ -143,7 +143,7 @@ cd /usr/local/Cellar
 open .
 ```
 
-Navigate to `allegro/5.2.4.0/lib/`
+Navigate to `allegro/5.2.6.0/lib/`
 
 Sort by `Modified date` and select all files that is modified today. (don't need to select the `pkgconfig` folder)
 
@@ -151,11 +151,11 @@ Sort by `Modified date` and select all files that is modified today. (don't need
 
 Go back to XCode and click `General`
 
-Drag the selected files into the `Linked Frameworks and Libraries`.
+Drag the selected files into the `Frameworks, Libraries, and Embedded Content`.
 
 ![](imgs/mac-link.png)
 
-Create `main.c` (`File > New > File... > C file`), uncheck the header checkbox.
+Create `main.c` (`File > New > File... > C file`), uncheck `Also create a header file`.
 
 Paste the code below to the file.
 
