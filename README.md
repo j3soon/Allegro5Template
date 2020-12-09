@@ -12,10 +12,12 @@ We will use Allegro 5 in the final project.
 - 12/20 (Sun.) 09:00-20:00 Hackathon for Prof. Hu's Class (grading 2%)
 - 01/18 (Mon.) Final Project Demo, details will be announced one week before (grading 13%)
 
-Exercises:
+
+Related Links:
 - [Exercises](/Exercises)
 - [Exercises step-by-step video](https://youtu.be/Araij6j6QME)
 - **(New)** [Exercises Template](https://github.com/j3soon/Allegro5Template/releases/download/v2020/Exercises.Template.zip)
+- [Tutorial Slides](https://github.com/j3soon/Allegro5Template/blob/master/Allegro5_Tutorial.pdf)
 
 <!--
 PPT: [allegro5_tutorial.pdf](/allegro5_tutorial.pdf)
