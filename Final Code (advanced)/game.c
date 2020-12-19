@@ -254,18 +254,21 @@ void game_log(const char* format, ...) {
 #endif
 }
 
-static void game_vlog(const char* format, va_list arg) {
+void game_vlog(const char* format, va_list arg) {
 #ifdef LOG_ENABLED
     static bool clear_file = true;
-    vprintf(format, arg);
-    printf("\n");
     // Write log to file for later debugging.
     FILE* pFile = fopen("log.txt", clear_file ? "w" : "a");
     if (pFile) {
-        vfprintf(pFile, format, arg);
+        va_list arg2;
+        va_copy(arg2, arg);
+        vfprintf(pFile, format, arg2);
+        va_end(arg2);
         fprintf(pFile, "\n");
         fclose(pFile);
     }
+    vprintf(format, arg);
+    printf("\n");
     clear_file = false;
 #endif
 }

@@ -8,8 +8,8 @@ We will use Allegro 5 in the final project.
 
   You should finish installing and setting up Allegro5 on your own computer and practice the exercises before Hackathon.
 
-- 12/19 (Sat.) 09:00-20:00 Hackathon for Prof. Yang's Class (grading 2%)
-- 12/20 (Sun.) 09:00-20:00 Hackathon for Prof. Hu's Class (grading 2%)
+- 12/19 (Sat.) 09:00-17:00 Hackathon for Prof. Yang's Class (grading 2%)
+- 12/20 (Sun.) 09:00-17:00 Hackathon for Prof. Hu's Class (grading 2%)
 - 01/18 (Mon.) Final Project Demo, details will be announced one week before (grading 13%)
 
 Related Links:
@@ -53,7 +53,7 @@ Follow the steps [here](docs/README.md).
 
   [Allegro 5.0 reference manual](https://www.allegro.cc/manual/5/)
 
-- GitHub repo
+- GitHub repo of Allegro 5
 
   [Source Code](https://github.com/liballeg/allegro5)
 
